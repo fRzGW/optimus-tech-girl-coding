@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header section */
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 148px;
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header ul li, ul a, header a{
+    list-style: none;
+    color: #667085;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #000;
+}
+
+header ul li{
+    margin-right: 32px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div a:first-child{
+    margin-right: 30px;
+}
+
+header div .login-btn{
+    color: #667085;
+    transition: color .3s ease;
+}
+
+header div .login-btn:hover{
+    color: #000
+}
+
+header div .register-btn{
+    color: #fff;
+    background-color: #8E2424;
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    transition: all .3s ease;
+}
+
+header div .register-btn:hover{
+    color: #8E2424;
+    background: transparent;
+    transform: scale(1.03);
+}
+
+/* Cabecalho */
+
+#cabecalho{
+    height: 407px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cabecalho .cabecalho-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cabecalho h1{
+    color: #8E2424;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#cabecalho h2{
+    margin-top: 24px;
+    color: #101828;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -2%;
+    margin-bottom: 36px;
+}
+
+#cabecalho p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #667085;
+}
+
+/* Metricas */
+
+#metricas {
+    height: 288px;
+    display: flex;
+    justify-content: center;
+}
+
+#metricas .metricas-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#metricas .metricas-container h1 {
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: -2%;
+    color: #8E2424;
+}
+
+#metricas .metricas-container h2 {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+}
+
+#metricas .metricas-container p {
+    margin-top: 8px;
+    color: #667085;
+}
+
+#metricas .metrica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 16px;
+}
+
+/* Vagas */
+
+#vagas {
+    height: 1789px;
+}
+
+#vagas .vagas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vagas .vagas-container .vagas-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    color: #8E2424;
+    margin-top: 96px;
+    line-height: 20px;
+}
+
+#vagas .vagas-container h1 {
+    margin-top: 16px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+}
+
+#vagas .vagas-container p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #667085;
+}
+
+#vagas .vagas-container .img {
+    margin-top: 64px;
+    width: 90%;
+    height: 400px;
+    background: url('./images/pessoas.png') no-repeat center/cover;
+}
+
+#vagas .vagas-abertas {
+    display: flex;
+    flex-direction: column;
+}
+
+#vagas .vaga {
+    margin-top: 24px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+    width: 768px;
+    height: 136px;
+}
+
+#vagas .vagas-abertas div h1, .vagas-abertas .vaga-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#vagas .vagas-abertas h1 {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+#vagas .vaga-desc {
+    align-items: center;
+    margin-top: 32px;
+    display: flex;
+    height: 10px;
+    margin-bottom: 28px;
+}
+
+#vagas .vaga-desc p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+
+}
+
+#vagas .vaga-desc p:last-child {
+    margin-left: 24px;
+}
+
+/* Depoimentos */
+
+#depoimentos {
+    height: 500px;
+    padding: 0px 0px 96px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#depoimentos .depoimentos-container {
+    width: 90%;
+    height: 404px;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.depoimentos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.depoimentos-header h1 {
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #8E2424;
+}
+
+.depoimentos-header h2 {
+    width: 65%;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+.depoimentos-avatar h1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    margin-bottom: 4px;
+}
+
+.depoimentos-avatar h2 {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#formulario {
+    height: 430px;
+    background: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario h1 {
+    margin-top: 96px;
+    font-size: 36px;
+    letter-spacing: -2%;
+    color: #101828;
+    font-weight: 600;
+}
+
+#formulario h2 {
+    margin-top: 20px;
+    color: #667085;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#formulario input {
+    font-family: 'Inter', sans-serif;
+    width: 360px;
+    height: 48px;
+    padding: 12px 14px 12px 16px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #667085;
+    font-weight: 400;
+}
+
+#formulario button {
+    font-family: 'Inter', sans-serif;
+    width: 116px;
+    height: 48px;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #8E2424;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+#formulario p {
+    color: #98A2B3;
+    font-size: 16px;
+    margin-top: 32px;
+}

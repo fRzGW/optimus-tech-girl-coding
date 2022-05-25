@@ -258,7 +258,6 @@ header div .register-btn:hover{
     padding: 0px 0px 96px;
     display: flex;
     justify-content: center;
-
 }
 
 #depoimentos .depoimentos-container {
@@ -307,6 +306,8 @@ header div .register-btn:hover{
     font-size: 14px;
     font-weight: 400;
 }
+
+/* Formulario */
 
 #formulario {
     height: 430px;
